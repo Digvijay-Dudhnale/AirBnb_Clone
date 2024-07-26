@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: "Roboto", sans-serif;
+}
+
+/* HEADER */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(Images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* NAVIGATION BAR */
+.header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav-links li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+.nav-links li a{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links li a::after{
+    content: "";
+    background: #fff;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -8px;
+    transition: width 0.5s;
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
+.register-btn{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/*HEADER CONTAINER */
+.container{
+    padding: 0 7%;
+}
+
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    padding-top: 22%;
+}
+
+.search-bar{
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-bar form button{
+    background: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+}
+
+.location-input{
+    flex: 1;
+}
+
+.search-bar form label{
+    font-weight: 600;
+}
