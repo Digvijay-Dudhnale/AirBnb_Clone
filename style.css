@@ -17,7 +17,7 @@
 }
 
 /* NAVIGATION BAR */
-.header nav{
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -323,7 +323,7 @@ nav .fa-bars{
         top: 4%;
         left: 7%;
     }
-    .header nav{
+    nav{
         position: fixed;
         top: 0;
         z-index: 100;
@@ -362,7 +362,7 @@ nav .fa-bars{
         color: #fff;
         font-size: 28px;
     }
-    .header .hidemenu{
+    .hidemenu{
         max-height: 300px;
     }
     .header h1{
@@ -417,4 +417,101 @@ nav .fa-bars{
     .about-msg{
         font-size: 15px;
     }
+}
+
+/* ----------LISTING PAGE------------------ */
+/* NAVIGATION BAR */
+.navbar-white{
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-white .nav-links li a{
+    color: black;
+}
+
+.navbar-white .register-btn{
+    background: #ff5361;
+    color: #fff;
+}
+
+nav.navbar-white .fa-bars{
+    color: #000;
+}
+
+.navbar-white .nav-links li a::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    position: absolute;
+    background: #000;
+    transition: width 0.5s;
+}
+
+.navbar-white .nav-links li a:hover::after{
+    width: 100%;
+}
+
+/* LIST CONTAINER */
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+
+.left-col h1{
+    color: #333;
+    font-weight: 30px;
+    margin-bottom: 30px;
+}
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+.house-img{
+    flex-basis: 40%;
+}
+.house-info{
+    flex-basis: 58%;
+}
+
+.house-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.house-info h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+
+.house-info i{
+    color: #ff5361;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+
+.house-price{
+    text-align: right;
+}
+.house-price h4{
+    font-size: 20px;
+}
+.house-price h4 span{
+    font-size: 15px;
+    font-weight: 500;
 }
