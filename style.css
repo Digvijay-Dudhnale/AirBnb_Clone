@@ -515,3 +515,79 @@ nav.navbar-white .fa-bars{
     font-size: 15px;
     font-weight: 500;
 }
+
+/* LIST SIDEBAR */
+.sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+
+.sidebar h2{
+    font-weight: 500;
+}
+
+.sidebar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+.filter{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.filter p{
+    /* position: absolute; */
+    /* right: 0; */
+    flex: 1;
+}
+
+.filter input{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+.sidebar-link a{
+    text-decoration: none;
+    color: #ff5361;
+}
+
+/* PAGINATION */
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.pagination span{
+    margin: 2px 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination img{
+    width: 9px;
+    margin: 10px 10px;
+}
+
+.right-arrow{
+    transform: rotate(180deg);
+}
+
+.pagination .current-page{
+    background: #333;
+    color: #fff;
+}
